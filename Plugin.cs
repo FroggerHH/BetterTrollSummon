@@ -26,6 +26,8 @@ internal class Plugin : BaseUnityPlugin
         OnConfigurationChanged += UpdateStaff;
         Localizer.Load();
 
+        //TODO: Describe mods functionality in README.md
+        //TODO: List all configs in README.md
         maxlevelBloodMagicTrollLevel = config("Troll", "Max Blood Magic Troll Level", 2,
             new ConfigDescription("When BloodMagic skill is 100, Trolls will spawn with this level",
                 new AcceptableValueRange<int>(1, 3)));
